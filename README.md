@@ -1,1 +1,1 @@
-# first OpenClassrooms Project "Boooki".
+# first OpenClassrooms Project "Booki".
