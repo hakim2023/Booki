@@ -1,0 +1,1052 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+
+/* //////////////general css ///////////*/
+
+*{
+    margin: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: white;
+    font-family: 'Raleway';
+    position: relative;
+    
+}
+
+/*//////////// header css  START//////////////*/
+
+header{
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 5;
+    
+}
+.navbar , .navbar>ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0em 5em 0em 5em ;
+    padding-bottom: 0.5rem;
+ 
+    
+}
+.logo>img{
+    width: 4rem;
+    padding-top: 1.5em;
+    cursor: pointer;
+}
+
+.navbar>ul>li{
+    list-style: none;
+    margin-left: 4rem;
+    border-top: 3px solid  #0065fc00;
+    padding: 1.5em 0.5em 0em 0.5em;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.navbar>ul>li>a{
+text-decoration: none;
+color: #000;
+
+}
+
+.actif{
+    color:#0065FC !important ;
+    padding: 1.5em 0em 0em 0em;
+    border-top: 3px solid  #0065FC;
+}
+/*//////////// header css  END//////////////*/
+
+/*////// hebergement section css //////////*/
+
+
+/*/////////// Location START///////////////*/
+
+.hebergement--section{
+    margin: 6em 5em 0em 5em;
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+h1{
+   
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    
+
+}
+
+.hebergement--section>p{
+    margin-top: 1rem;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+}
+
+.search--form{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+   width: fit-content;
+   border-bottom: 1px solid rgba(109, 109, 109, 0.515);
+   border-radius: 15px 0px 15px 15px;
+   box-sizing: border-box;
+
+    
+}
+
+.location--search{
+    background-color: #F2F2F2;
+    height: 21px;
+  
+    border-radius: 15px 0px 0px 15px;
+    height: 49px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  
+}
+.location--search>i{
+   background-color: #f2f2f2fe;
+   
+}
+
+
+
+#location{
+    height: 49px;
+    border: 1px solid #f2f2f208;
+    color: #000;
+    font-weight: bold;
+    padding: 0.8rem;
+    outline: none;
+    
+
+}
+#location::placeholder{
+    color: #000;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.btn-search--location{
+
+    background: #0065FC;
+    height: 49px;
+   border: 0px solid blue;
+    border-radius: 0px 15px 15px 0px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    padding: 0rem 0.8rem;
+ 
+ 
+}
+
+/*/////////// Location END///////////////*/
+
+
+
+/*/////////// filter START///////////////*/
+
+
+.filters{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    flex-wrap: wrap;
+}
+.filtre{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+.filter--btns{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.filter--btns>div{
+    
+     width: fit-content;
+     height: 50px;
+     font-family: 'Raleway';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 17px;
+     line-height: 20px;
+     padding: 0rem 1.3rem;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     border: 2px solid #D9D9D9;
+     border-radius: 25px;
+     cursor:pointer;
+}
+
+
+.filter--btns>div>i{
+    padding:10px ;
+   color: #0065FC !important;
+}
+
+.filter--btns>div:hover>i{
+    background-color:  rgb(222, 231, 255);
+     
+}
+.btn-filtre:hover{  
+    background-color:  rgb(222, 231, 255);
+  }
+  
+
+.color--filter{
+    background:rgb(222, 231, 255);
+}
+
+.filter--info{
+    margin-top: 2rem;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/*/////////// filter END///////////////*/
+
+
+/*/////////// Cards START///////////////*/
+.overlay{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(3px);
+        z-index: 5;
+    }
+
+.hidden{
+    display: none;
+}
+.card--show{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 255, 0);
+    overflow: hidden;
+    background-color: #000;
+    width: 90vh;
+    height: 60vh;
+    
+}
+.card--show>img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 90vh;
+    height: 60vh;
+}
+
+.closer{
+    position: absolute;
+    top:0;
+    right: 1rem;
+    z-index: 88;
+    background-color: transparent;
+    font-size: 2.7rem;
+    color: #000000;
+    cursor: pointer;
+    
+}
+
+.rectangle18{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+
+}
+
+.rectangle--left{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    height:626px;
+    width: 880px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 2rem;
+
+    
+    /* flex-wrap: wrap; */
+}
+
+.rectangle--left>h3{
+    background-color: #F2F2F2;
+
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: #F2F2F2;
+    gap: 2rem;
+}
+
+.rectangle--left>a{
+    background: #F2F2F2;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.host{
+    height: 199px;
+    width: 246px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.image--holder{
+    box-sizing: border-box;
+    height: 124px;
+    width: 246px;
+    /* background-size: cover;
+    background-position: center; */
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.host--name{
+    width: fit-content;
+    /* height: 15px; */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin:  0.2rem 0.2rem 0.3rem 0.7rem;
+}
+.host--price{
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin:  0.3rem 0.2rem 0.3rem 0.7rem;
+
+
+}
+.host--rate{
+    margin:  0.3rem 0.2rem 0.3rem 0.7rem;
+    width: 80%;
+    cursor: pointer;
+}
+
+.host--rate>.checked{
+    color: #0065FC !important;  
+}
+.host--rate>.not-checked{
+    color: #F2F2F2 !important;
+}
+.checked:hover, .not-checked:hover{
+    color: gold !important;
+    cursor: pointer;
+   }
+
+/* ///////////Cards right CSS /////////// */
+
+.rectangle--right{
+    height: 626px;
+    width: 420px;
+    background: #F2F2F2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+.gallery--right{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    background: #F2F2F2;
+}
+
+.title--right--rectangle{
+    width: 100%;
+    border-radius: 20px;
+    padding: 1.5rem 0rem 0rem 0rem;
+    background: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+ 
+}
+.title--right--rectangle>h3 , .title--right--rectangle>i {
+    background: #F2F2F2;
+  
+}
+
+.host--right{
+    height: 144px;
+    width: 334.0000915527344px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0px 8px 0 rgba(0,0,0,0.2);
+}
+
+.host--right>.image--holder{
+    box-sizing: border-box;
+    height: 144px;
+    width: 137px;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+   
+}
+
+.host--infos{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0px 20px 20px 00px;
+  
+}
+
+.host--infos>.host--price{
+    /* margin-bottom: 2rem; */
+}
+.host--infos>.host--name{
+    /* margin-top: 1rem; */
+    /* height: 38px; */
+   max-width: 160px;
+}
+/* /////////////////Cards END //////////////////// */
+
+/* /////////// HEBERGEMENT SECTION END /////////// */
+
+/* /////////// ACTIVITES SECTION START /////////// */
+
+.activites--section{
+    margin: 6em 5em 0em 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+.activites--cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    height: 444.5082092285156px;
+    width: 302px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 8px 8px  rgba(0,0,0,0.2);
+}
+.card>img{
+    height: 389px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card>h3{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 1rem;
+}
+
+/* /////////// ACTIVITES SECTION END /////////// */
+
+/* /////////////// FOOTER START//////////////// */
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #F2F2F2;
+    margin: 6em 5em 0em 5em;
+    height: 225px;
+   
+}
+
+footer>div{
+    display: flex;
+    flex-direction: column;
+    gap:0.9rem;
+
+    background: #F2F2F2;
+}
+
+footer>div>h4{
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    background: #F2F2F2;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+footer>div>a{
+    text-decoration: none;
+    background: #F2F2F2;
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #000000;
+}
+/* /////////////// FOOTER END//////////////// */
+
+/* /////////////// Tablette query//////////////// */
+
+@media only screen and (max-width: 1460px )   {
+  
+    .card--show,.card--show>img{
+        width: 40vh;
+        height: 25vh;  
+    }
+    .card--show{  
+        top:25%;   
+    }
+
+    .navbar , .navbar>ul{    
+        flex-wrap: nowrap;
+        margin: 0em 5em 0em 5em ;
+        padding-bottom: 0rem;   
+    }
+    .logo>img{
+        width: 3rem;
+    }  
+    .navbar>ul>li{
+        margin-left: 1rem;
+        padding: 1.5em 0.5em 0em 0.5em; 
+    }
+
+    header{
+        position: static;
+    }
+
+    .hero{
+        padding: 0rem 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;    
+    }
+    .hebergement--section{
+        margin: 3em 1em 0em 1em;
+    }
+   
+    h1{
+        font-size: 22px;   
+    }
+    
+    .hebergement--section>p{
+        font-weight: 400;
+        font-size: 16px;
+    
+    }
+    
+    .btn-search--location{
+        font-weight: 600;
+        font-size: 13px;
+        padding: 0rem 0.3rem;
+    }
+  
+    .filters{
+        margin-top: 2rem;
+        align-items: center;
+        gap:1.2rem;
+        flex-wrap: wrap;
+       
+    }
+
+    .filter--btns{
+        flex-wrap: wrap;  
+        gap: 0.5rem;
+    
+    }
+    .filter--btns>div{  
+         width: 170px;
+         height: 50px; 
+    }
+   
+
+    
+    
+    .filter--btns>div>i{
+        padding:6px ;
+         
+    }
+ 
+    
+    .rectangle18{
+     
+        justify-content: center;
+        margin: 3em 0.2em 0em 0.2em;
+        gap:1rem;
+    
+    }
+    
+    .rectangle--left{ 
+        height:fit-content;
+        gap: 2rem;
+        width: 100%;  
+        padding: 1rem 0.2rem;
+    
+    }
+    .rectangle--left>h3{ 
+        padding: 0rem 2rem;
+    
+    }
+    .rectangle--left>a{ 
+        padding: 0rem 2rem;
+        font-size: 15px;
+    
+    }
+    
+    .gallery{
+        justify-content: space-evenly;
+        /* margin: 0 auto;
+        width: 100%; */
+        gap: 2rem 0.5rem;  
+    }
+    
+ /* ///////////Cards right CSS /////////// */
+
+.rectangle--right{
+    margin-top: 3rem;
+    height: fit-content;
+    gap:2rem;
+    width: 100%;
+    padding: 3rem 0.3rem;
+    justify-content: space-between;
+  
+}
+
+.gallery--right{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2.5rem 0.2rem;
+}
+
+.title--right--rectangle{  
+    justify-content: space-between;
+    padding: 0rem 3rem; 
+}
+
+.host--right{
+    height: fit-content;
+    width: 29%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 0rem;
+}
+.host--right>.image--holder{
+
+    width: 40%;
+   
+   
+}
+
+.host--infos{
+    height: 100%;   
+    gap: 0.2rem;
+    justify-content: space-evenly;
+    align-items: flex-start;  
+}
+
+.host--infos>.host--name{ 
+    max-width: 140px;  
+}
+
+/* /////////// ACTIVITES SECTION START /////////// */
+
+.activites--section{
+    margin: 4em 1.2em 0em 1.2em;  
+    gap: 2rem;
+}
+.activites--section>h2{
+    margin-left: 0.5rem; 
+}
+.activites--cards{
+   
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.card{
+   
+    /* overflow: none; */
+    box-shadow: 2px 8px 8px  rgba(0,0,0,0.2);
+    height: 267px;
+    width: 182px;
+    display: flex;
+    flex-direction: column;
+  
+ 
+
+}
+.card>img{
+    height: 211px !important;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card>h3{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    height: 51px;
+    padding: 0.5rem;
+  
+    /* padding: 1rem; */
+}
+
+footer{
+  
+    align-items: baseline;
+    margin: 6em 2em 1em 2em;
+    padding: 2rem 0rem;
+    height: fit-content;
+    font-size:60% !important;
+   
+}
+
+footer>div{
+    align-items: baseline;
+    gap:0.7rem;
+    background: #F2F2F2;
+}
+
+footer>div>h4{
+    font-weight: 600;
+    font-size: 15px;
+   
+}
+footer>div>a{
+    font-size: 13px;
+ 
+}
+
+} /* /////////////// Tablette query END//////////////// */
+
+/* ///////////// Tablette query REFINE START///////////// */
+@media only screen and (max-width: 789px ) and (min-width:557px )   {
+    
+    .gallery--right{
+        flex-direction: column;
+    }
+
+    
+    .host--right{
+        height: 189px;
+        width: 80%;
+       
+    }
+    .host--right>.image--holder{
+        width: 35%;
+        height: 100%; 
+       
+    }
+
+}
+
+/* /////////////// Phone query START//////////////// */
+
+@media only screen and (max-width:556px )  {
+
+
+    .navbar{
+         
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar>ul{
+     
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        
+    }
+    .logo>img{
+        width: 4rem;
+        padding-top: 1em;
+    }
+    
+    .navbar>ul>li{
+        
+        margin-left: 0rem;
+        border-bottom: 3px solid #F2F2F2;;
+        padding: 1.5em 0.0em 1.5em 0.0em;
+        margin-bottom: 1.5rem;
+        width:  100%;
+         
+    } 
+ 
+    .actif{
+        color:#0065FC !important ;
+        padding: 0em 0em 1.5em 0em;
+        border-top: 3px solid  transparent;
+        border-bottom: 3px solid  #0065FC !important;
+        width: 100%;
+    }
+
+    .hebergement--section{
+        margin: 2em 0em 0em 0em;
+       
+    }
+    .hero{
+        padding: 0rem 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;    
+    }
+    
+    
+    .search--form{
+        align-self:  center;;
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: max-content;    
+    }
+    
+    
+    #location{  
+        width: fit-content;
+        max-width: 140px; 
+    }
+ 
+    
+    .btn-search--location{   
+        font-size: 13px;
+        padding: 0rem 0.3rem;
+    }
+    
+    .filters{
+        margin-top: 2rem;
+        align-items: center;
+        gap:1.2rem;
+        flex-wrap: wrap;
+       
+    }
+
+    .filter--btns{
+        flex-wrap: wrap;  
+        gap: 0.4rem;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding:4px ; 
+    }
+    .filter--btns>div{  
+        width: 160px;
+        height: 50px; 
+        padding: 0rem 0.5rem; 
+        gap: 0.4rem;
+        justify-content: flex-start;
+        font-size: 11px;    
+    }
+     
+    .filter--btns>div>i{
+        padding:0px ;
+        margin: 0px;    
+    }
+/* ///////////Cards right CSS /////////// */
+.rectangle18{
+    flex-direction: column-reverse;
+    
+}
+.rectangle--right{
+    margin-top: 0rem;
+    width: 100%;
+    padding: 2rem 0.3rem;  
+    border-radius: 0px;
+  
+}
+
+.gallery--right{
+    flex-direction: column;
+    gap: 0.8rem 0.2rem;
+}
+
+.title--right--rectangle{  
+    justify-content: space-between;
+    padding: 0rem 1.5rem; 
+}
+
+.host--right{
+    height: fit-content;
+    width: 95%;
+
+}
+.host--right>.image--holder{
+    width: 137px; 
+}
+
+.host--infos{
+    height: 100%;   
+    gap: 0.2rem;
+ 
+}
+
+
+.host--infos>.host--name{ 
+    max-width: 169px;  
+}
+
+.rectangle--left{   
+    padding: 1rem 1rem;
+    background-color: #FFFFFF;
+}
+
+.gallery{
+    flex-direction: column;
+    gap: 0.6rem 0.5rem;  
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+
+.host{
+    height: fit-content;
+    width: 100%;
+    flex-direction: column;  
+}
+
+.image--holder{  
+    height: 124px;
+    width:100%;
+
+}
+
+.rectangle--left>h3 , .rectangle--left>a{
+    background-color: #FFFFFF;
+        padding: 0rem 0rem;
+   
+}
+.rectangle--left>a{
+    font-size: 13px;
+}
+
+/* /////////// ACTIVITES SECTION START /////////// */
+
+
+.activites--section{
+    margin: 2em 1em 0em 1em;  
+    gap: 1rem;
+}
+.activites--section>h2{
+    width: 212px;
+    margin-left: 0px;
+}
+
+
+.activites--cards{   
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.card{
+    height: 199px;
+    width: 100%;
+    flex-direction: column;
+
+}
+.card>img{
+    height: 145px !important;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card>h3{
+    font-size: 14px;
+   
+}
+
+footer{
+    flex-direction: column;
+    gap: 2rem;
+    margin: 4em 0em 1em 0em;
+    padding: 2rem;
+  
+   
+}
+
+footer>div{
+    align-items: baseline;
+    gap:0.7rem;
+    background: #F2F2F2;
+}
+
+footer>div>h4{
+    margin-bottom: 0.2rem;
+   
+}
+
+
+
+}
