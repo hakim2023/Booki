@@ -10,12 +10,15 @@
     font-family: 'Raleway';
     position: relative;   
 }
-
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+}
 /*//////////// header css  START//////////////*/
 
 header{
-    position: fixed;
-    top:0;
+    
+
     width: 100%;
     z-index: 5;
     
@@ -133,7 +136,7 @@ h1{
     opacity: 0.8;
 }
 
-.btn-search--location{
+.btn-search--location1{
 
     background: #0065FC;
     height: 49px;
@@ -148,6 +151,20 @@ h1{
     line-height: 21px;
     text-align: center;
     padding: 0rem 0.8rem;
+ 
+}
+
+.btn-search--location2{
+    background: #0065FC;
+    text-align: center;
+    padding: 0rem 0.8rem;
+    border-radius: 0px 15px 15px 0px;
+    border: 0px solid blue;
+    display: none;
+}
+.fa-magnifying-glass{
+    background: #0065FC;
+    color: white;
  
 }
 
@@ -244,11 +261,12 @@ h1{
     align-items: flex-start;
     flex-direction: column;
     height:626px;
+   
     width: 65%;
     background-color: #F2F2F2;
     border-radius: 20px;
     gap: 0.5rem;
-    overflow: scroll;
+    overflow: hidden;
     /* height: 100%; */
 }
 
@@ -259,13 +277,13 @@ h1{
 }
 .gallery{
     /* height: 430px; */
-    overflow: hidden;
+  
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     background: #F2F2F2;
     gap: 1rem;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
 
 }
 .gallery>a{
@@ -282,12 +300,12 @@ h1{
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-    margin: 2rem 0rem 0rem 3rem;
+    margin: 0rem 0rem 2rem 3rem;
 }
 
 .host{
-    height: 199px;
-    width: 246px;
+    height: fit-content;
+    width: 28%;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
@@ -295,7 +313,7 @@ h1{
 .image--holder{
     box-sizing: border-box;
     height: 124px;
-    width: 246px;
+    width: 100%;
     border: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
@@ -358,7 +376,7 @@ h1{
 .gallery--right{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2.5rem;
     flex-direction: column;
     background: #F2F2F2;
 }
@@ -382,12 +400,13 @@ h1{
 }
 
 .host--right{
-    height: 144px;
-    width: 100%;
+  
+    height: 100%;
+    width: 85%;
     border-radius: 20px;
     padding-right: 0.3rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     box-shadow: 0 0px 8px 0 rgba(0,0,0,0.2);
     overflow: hidden;
@@ -395,10 +414,11 @@ h1{
 
 .host--right>.image--holder{
     box-sizing: border-box;
-    height: 144px;
-    width: 137px;
+    height: 100%;
+    width: 35%;
     border: 5px solid #FFFFFF;
     border-radius: 20px 0px 0px 20px;
+    /* justify-self: flex-start; */
    
 }
 
@@ -408,14 +428,17 @@ h1{
     flex-direction: column;
     justify-content: space-around;
     border-radius: 0px 20px 20px 00px;
+    
   
 }
+
 
 
 .host--infos>.host--name{
     /* margin-top: 1rem; */
     /* height: 38px; */
    max-width: 160px;
+ 
 }
 /* /////////////////Cards END //////////////////// */
 
@@ -447,11 +470,14 @@ h1{
     box-shadow: 2px 8px 8px  rgba(0,0,0,0.2);
     text-decoration: none;
     color: #000000;
+   
+    
 }
 .card>img{
     height: 389px;
     width: 100%;
     object-fit: cover;
+    
 }
 
 .card>h3{
@@ -460,7 +486,8 @@ h1{
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    padding: 1rem;
+    margin: 5% 0% 0% 5%;
+    
 }
 
 /* /////////// ACTIVITES SECTION END /////////// */
@@ -522,7 +549,7 @@ footer>div>a{
 
     .navbar , .navbar>ul{    
         flex-wrap: nowrap;
-        margin: 0em 5em 0em 5em ;
+        margin: 0em 2rem 0em 2rem ;
         padding-bottom: 0rem;   
     }
     .logo>img{
@@ -557,11 +584,12 @@ footer>div>a{
     
     }
     
-    .btn-search--location{
+    .btn-search--location1{
         font-weight: 600;
         font-size: 13px;
         padding: 0rem 0.3rem;
     }
+
   
     .filters{
         margin-top: 2rem;
@@ -602,23 +630,33 @@ footer>div>a{
         height:fit-content;
         gap: 2rem;
         width: 100%;  
-        padding: 1rem 0.2rem;
+        padding: 1rem 2rem;
+      
     
     }
     .rectangle--left>h3{ 
-        padding: 0rem 2rem;
+        padding: 0rem 0rem;
     
+        padding: 0px;
+        margin: 0px;
+  
     }
     .rectangle--left>a{ 
-        padding: 0rem 2rem;
+        padding: 0rem 0rem;
         font-size: 15px;
     
+        padding: 0px;
+        margin: 0px;
+     
     }
     
     .gallery{
-        justify-content: space-evenly;
+        justify-content: space-between;
         /* height: 600px; */
-        gap: 2rem 0.5rem;  
+        gap: 2rem 0.0rem;  
+        padding: 0px;
+        margin: 0px;
+    
     }
     
  /* ///////////Cards right CSS /////////// */
@@ -639,7 +677,8 @@ footer>div>a{
     width: 100%;
     align-items: center;
     justify-content: space-around;
-    gap: 2.5rem 0.2rem;
+    gap: 2.5rem 0.1rem;
+
 }
 
 .title--right--rectangle{  
@@ -648,7 +687,7 @@ footer>div>a{
 }
 
 .host--right{
-    height: fit-content;
+    height: 150px;
     width: 29%;
     border-radius: 20px;
     display: flex;
@@ -657,10 +696,10 @@ footer>div>a{
 }
 .host--right>.image--holder{
 
-    width: 40%;
-   
-   
+    height: 100%;
+    width: 50%;
 }
+
 
 .host--infos{
     height: 100%;   
@@ -694,9 +733,10 @@ footer>div>a{
     /* overflow: none; */
     box-shadow: 2px 8px 8px  rgba(0,0,0,0.2);
     height: 267px;
-    width: 182px;
+    width: 22%;
     display: flex;
     flex-direction: column;
+    position: relative;
   
  
 
@@ -708,15 +748,10 @@ footer>div>a{
 }
 
 .card>h3{
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    height: 51px;
-    padding: 0.5rem;
-  
-    /* padding: 1rem; */
+    position: absolute;
+    left: 19px;
+    bottom: 11px;
+    margin: 0% 0% 0% 0%;
 }
 
 footer{
@@ -748,35 +783,7 @@ footer>div>a{
 } /* /////////////// Tablette query END//////////////// */
 
 /* ///////////// Tablette query REFINE START///////////// */
-@media only screen and (max-width: 796px ) and (min-width:768px )   {
-    
-    .gallery--right{
-        flex-direction: column;
-    }
 
-    
-    .host--right{
-        height: 189px;
-        width: 80%;
-       
-    }
-    .host--right>.image--holder{
-        width: 35%;
-        height: 100%; 
-       
-    }
-
-    .activites--cards{
-        gap: 0.1rem;
-    }
-    
-    .card{
-
-        width: 178px;
-         
-    }
-
-}
 
 /* /////////////// Phone query START//////////////// */
 
@@ -853,9 +860,15 @@ footer>div>a{
     }
  
     
-    .btn-search--location{   
+    .btn-search--location1{   
         font-size: 13px;
         padding: 0rem 0.3rem;
+        display: none;
+    }
+
+    .btn-search--location2{
+  
+        display: block;
     }
     
     .filters{
@@ -914,13 +927,15 @@ footer>div>a{
 }
 
 .host--right{
-    height: fit-content;
+    height: 144px;
     width: 95%;
 
 }
 .host--right>.image--holder{
     width: 137px; 
+    height: 100%;
 }
+
 
 .host--infos{
     height: 100%;   
@@ -943,6 +958,9 @@ footer>div>a{
     gap: 0.6rem 0.5rem;  
     background-color: #FFFFFF;
     width: 100%;
+}
+.rectangle--left>a{
+    display: none;
 }
 
 
@@ -990,6 +1008,8 @@ footer>div>a{
     height: 199px;
     width: 100%;
     flex-direction: column;
+    position: relative;
+
 
 }
 .card>img{
@@ -1000,6 +1020,10 @@ footer>div>a{
 
 .card>h3{
     font-size: 14px;
+  position: absolute;
+  left: 19px;
+  bottom: 21px;
+   
    
 }
 
@@ -1020,9 +1044,6 @@ footer>div{
 
 footer>div>h4{
     margin-bottom: 0.2rem;
-   
 }
-
-
 
 }
