@@ -782,7 +782,7 @@ footer>div>a{
 
 } /* /////////////// Tablette query END//////////////// */
 
-/* ///////////// Tablette query REFINE START///////////// */
+
 
 
 /* /////////////// Phone query START//////////////// */
@@ -932,7 +932,7 @@ footer>div>a{
 
 }
 .host--right>.image--holder{
-    width: 137px; 
+    width: 35%; 
     height: 100%;
 }
 
@@ -945,7 +945,7 @@ footer>div>a{
 
 
 .host--infos>.host--name{ 
-    max-width: 169px;  
+    max-width: 100%;  
 }
 
 .rectangle--left{   
