@@ -4,7 +4,7 @@
 
 * {
 	margin: 0;
-	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 	background: white;
 	font-family: 'Raleway';
@@ -486,6 +486,8 @@ h1 {
 
 /* /////////// HEBERGEMENT SECTION END /////////// */
 
+
+
 /* /////////// ACTIVITES SECTION START /////////// */
 
 .activites--section {
@@ -538,6 +540,9 @@ h1 {
 
 /* /////////// ACTIVITES SECTION END /////////// */
 
+
+
+
 /* /////////////// FOOTER START//////////////// */
 
 
@@ -584,6 +589,8 @@ footer>div>a {
 }
 
 /* /////////////// FOOTER END//////////////// */
+
+
 
 /* /////////////// Tablette query//////////////// */
 
@@ -1117,7 +1124,6 @@ footer>div>a {
 		max-width: 100%;
 		padding: 0px;
 
-
 	}
 
 	footer {
@@ -1140,3 +1146,4 @@ footer>div>a {
 	}
 
 }
+/* /////////////// Phone query End//////////////// */
